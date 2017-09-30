@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Tell internet explorer to use the latest rendering engine-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Set the page width to the size of the device and set the zoom level to 1-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Elin Lager</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/elinStyle.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <div class="container-fluid" style="height: 100vh">
+            <div class="col-md-4 flex-first" id="menu" style="height: 100vh" >
+                <div id="meBtn" class="notActiveMenu">
+                    <p class="tredtext first">E</p>
+                    <p class="tredtext second">L</p>
+                    <p class="tredtext third">I</p>
+                    <p class="tredtext fourth">N</p>
+                    <p class="tredtext">&nbsp</p>
+                    <p class="tredtext fifth">L</p>
+                    <p class="tredtext sixth">A</p>
+                    <p class="tredtext seventh">G</p>
+                    <p class="tredtext eigth">E</p>
+                    <p class="tredtext ninth">R</p>
+                </div><br>
+                <div id="projectsBtn" class="notActiveMenu">
+                    <p class="tredtext second">P</p>
+                    <p class="tredtext third">R</p>
+                    <p class="tredtext fourth">O</p>
+                    <p class="tredtext fifth">J</p>
+                    <p class="tredtext sixth">E</p>
+                    <p class="tredtext seventh">C</p>
+                    <p class="tredtext eigth">T</p>
+                    <p class="tredtext ninth">S</p>
+                </div><br>
+                <div id="contactBtn" class="notActiveMenu">
+                    <p class="tredtext third">C</p>
+                    <p class="tredtext fourth">O</p>
+                    <p class="tredtext fifth">N</p>
+                    <p class="tredtext sixth">T</p>
+                    <p class="tredtext seventh">A</p>
+                    <p class="tredtext eigth">C</p>
+                    <p class="tredtext ninth">T</p>
+                </div><br>
+
+                <div class="projects" id="projectName" style="display: none;">
+                    <p id="twizHead" style="text-decoration: underline;">Twiz</p>
+                    <p id="spaceHead">SpaceSpaceSpace</p>
+                    <p id="globHead">Globelen</p>
+                    <p id="soundHead">SoundViz2k17</p>
+                </div>
+            </div>
+            <div class="col-md-8"></div>
+
+            <div class="col-md-8 me" >
+                <p class="simpleText">"Hej, jag heter Elin Lager."</p>
+            </div>
+
+            <div class="col-md-8 projects"  style="display: none">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" id="firstSlide">
+                            <img src="images/twiz.png" alt="Twiz">
+                        </div>
+
+                        <div class="item" id="secondSlide">
+                            <img src="images/space.png" alt="Space space space">
+                        </div>
+
+                        <div class="item" id="thirdSlide">
+                            <img src="images/globelen.png" alt="Globelen">
+                        </div>
+
+                        <div class="item" id="fourthSlide">
+                            <img src="images/sound.png" alt="Sound">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!-- ALT 1:
+
+                <div class="col-md-6 projectCol">
+                    <div class="video">
+                       <video width="320" muted>
+                            <source src="videos/byggabåt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Twiz</h4>
+                    <p class="simpleText">Projekt gjort i Medietekniskt kandidatprojekt. </p>
+                </div>
+                <div class="col-md-6 projectCol">
+                    <div class="video">
+                        <video width="320" muted>
+                            <source src="videos/byggabåt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>SpaceSpaceSpace</h4>
+                    <p class="simpleText">Projekt gjort i kursen Modellerings projekt.</p>
+                    <a class="styleLink" href="https://antonpalsson.github.io/Spacespacespace/">www.antonpalsson.github.io/Spacespacespace</a>
+                </div>
+                <div class="col-md-6 projectCol">
+                    <div class="video">
+                        <video width="320" muted>
+                            <source src="videos/byggabåt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Globelen</h4>
+                    <p class="simpleText">Projekt gjort i kursen 3D.</p>
+                    <a class="styleLink" href="http://elonolsson.github.io/3D-Global-Visualization/Globelen/main.html">www.elonolsson.github.io/3D-Global-Visualization/Globelen/main.html</a>
+                </div>
+                <div class="col-md-6 projectCol">
+                    <div class="video">
+                        <video width="320" muted>
+                            <source src="videos/byggabåt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>SoundViz2k17</h4>
+                    <p class="simpleText">Projekt gjort i kursen Ljud och vågfysik.</p>
+                    <a class="styleLink" href="https://elinlager.github.io/SoundViz2k17/">www.elinlager.github.io/SoundViz2k17/</a>
+                </div>-->
+            </div>
+
+            <div class="col-md-8 contact"  style="display: none">
+                <p class="simpleText contactText"></p>
+                <a class="simpleText styleLink" href="mailto:elinjohannalager@gmail.com?Subject=Hello">elinjohannalager@gmail.com</a>
+                <a class="icon" id="gitimg" target="_blank" href="https://github.com/elinlager">
+                    <img class="imgIcon" src="images/GitHub-Mark-120px-plus.png" alt="Git">
+                    <!--Image source: https://github.com/logos-->
+                </a>
+                <a class="icon" id="linkedinimg" target="_blank" href="https://www.linkedin.com/in/elin-lager">
+                    <img class="imgIcon" src="images/linkedin.png" alt="LinkedIn">
+                    <!--Image source: https://www.iconfinder.com/icons/104493/linkedin_icon-->
+                </a>
+            </div>
+
+        </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+
+            /* After the animation "Elin Lager" becomes active and the 3D-text is pressed.*/
+            setTimeout(function(){
+                $("#meBtn").addClass("ActiveMenu").removeClass("notActiveMenu");
+            }, 1500);
+
+
+            $("#meBtn").click(function() {
+                makeActive(0);
+            });
+            $("#projectsBtn").click(function() {
+                makeActive(1);
+            });
+            $("#contactBtn").click(function() {
+                makeActive(2);
+            });
+
+
+        });
+
+
+        /*A function to make the current menu-heading Active, and the 3D-text is "pressed".
+        Sources for different parts in the function:
+        https://stackoverflow.com/questions/2400386/get-class-name-using-jquery
+        https://stackoverflow.com/questions/3959236/how-to-change-class-name-of-an-element-by-jquery*/
+        function makeActive(nr){
+
+            var list = ["me", "projects", "contact"];
+            console.log(list[nr] + " har tryckts");
+            if($("#" + list[nr] +"Btn").attr('class') == "notActiveMenu") {
+                console.log("funkar");
+                $("#" + list[nr] +"Btn").addClass("ActiveMenu").removeClass("notActiveMenu");
+                $("." + list[nr]).show();
+                list.splice(nr, 1);
+
+                for(var i =0; i < 2; i++) {
+                    $("#" + list[i] +"Btn").addClass("notActiveMenu").removeClass("ActiveMenu");
+                    $("." + list[i]).hide();
+                }
+            }
+        }
+
+
+        /*Function to play video when hovered.
+        Source: https://stackoverflow.com/questions/26778714/video-play-on-hover
+         */
+        var figure = $(".video").hover( hoverVideo, hideVideo );
+
+        function hoverVideo(e) { $('video', this).get(0).play(); }
+        function hideVideo(e) { $('video', this).get(0).pause(); }
+
+
+
+        /* Function to mark which project is shown in the carousel.
+        Source: https://jsfiddle.net/nj04xms5/7/
+         */
+        $('#myCarousel').on('slide.bs.carousel', function(e) {
+            if(e.relatedTarget.id == 'firstSlide'){
+                $("#twizHead").css('text-decoration', 'underline');
+                $("#spaceHead").css('text-decoration', 'none');
+                $("#globHead").css('text-decoration', 'none');
+                $("#soundHead").css('text-decoration', 'none');
+            } else if(e.relatedTarget.id == 'secondSlide'){
+                $("#twizHead").css('text-decoration', 'none');
+                $("#spaceHead").css('text-decoration', 'underline');
+                $("#globHead").css('text-decoration', 'none');
+                $("#soundHead").css('text-decoration', 'none');
+            } else if(e.relatedTarget.id == 'thirdSlide'){
+                $("#twizHead").css('text-decoration', 'none');
+                $("#spaceHead").css('text-decoration', 'none');
+                $("#globHead").css('text-decoration', 'underline');
+                $("#soundHead").css('text-decoration', 'none');
+            } else if(e.relatedTarget.id == 'fourthSlide'){
+                $("#twizHead").css('text-decoration', 'none');
+                $("#spaceHead").css('text-decoration', 'none');
+                $("#globHead").css('text-decoration', 'none');
+                $("#soundHead").css('text-decoration', 'underline');
+
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>

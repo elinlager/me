@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Tell internet explorer to use the latest rendering engine-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Set the page width to the size of the device and set the zoom level to 1-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Elin Lager</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
+
+
+</head>
+<body>
+
+<!-- DEL 1: Hej -->
+<section id="hej" class="hej">
+    <div class="block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"><img src="images/elin.jpg" alt="Me" id="img-me" class="img-responsive center-block" style="width:304px;"></div>
+            <div class="col-sm-6">
+                <h1 id="hej">ELIN LAGER</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center">
+                <div class="smoothScroll">
+                    <a href="#about" class="btn btn-lg page-scroll">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- DEL 2: Om mig -->
+<section id="about" class="about">
+    <div class="block">
+    <div class="container">
+        <div class="row">
+            <h1>Elin Lager</h1>
+            <h3>
+                1992: Krister Björkman vinner Melodifestivalen med Imorgon är en annan dag, strax därefter föds jag på BB i Malmö. <br>
+                2004: Börjar högstadiet på Linneskolan i Limhamn och inser att matematik och fysik är min grej. <br>
+                2008: Börjar på Malmö Borgarskola. <br>
+                2010: Skriver boken "Du får väl inte äta wienerbröd - en överlevnadsguide för ungdomar med diabetes typ 1". <br>
+                2011: Tar studenten och ger mig ut på en tre månaders resa i Asien. <br>
+                2014: Flyttar till Norrköping och börjar plugga till Civilingenjör i Medieteknik. Blir kär i staden och att koda. <br>
+                2017: Börjar ett utbytesår vid National University of Singapore. Svettas mycket. <br>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="center">
+                <div class="smoothScroll">
+                    <a href="#projects" class="btn btn-lg">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- DEL 3: Projekt -->
+<section id="projects" class="projects">
+    <div class="block">
+    <div class="container">
+        <div class="row">
+            <h1>PROJEKT</h1>
+            <h3>
+
+            </h3>
+        </div>
+        <div class="row">
+            <div class="center">
+                <div class="smoothScroll">
+                    <a href="#contact" class="btn btn-lg">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- DEL 4: Kontakt -->
+<section id="contact" class="contact">
+    <div class="block">
+    <div class="container">
+        <div class="row">
+            <h1>Kontakt</h1>
+        </div>
+        <div class="row">
+            <div class="center">
+                <div class="smoothScroll">
+                    <a href="#hej" class="btn btn-lg">
+                        <span class="glyphicon glyphicon-menu-up"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+<!--<p>heter jag, är 25 år och pluggar till Civilingenjör i Medieteknik på Linköpings Universitet, campus Norrköping. <br>
+År 2014 flyttade jag från mitt barndomshem i Malmö för att studera i Norrköping. <br>
+Jag visste inget om staden och hade aldrig i mitt liv programmerat. <br>
+Det blev det bästa beslutet jag har tagit i mitt liv. <br>
+Förrutom Norrköping och kod så gillar jag pyssel, vin och födelsedagar.</p>-->
+
+
+<script>
+    $(document).ready( function() {
+        $(".container").on('click', function(event) {
+            $(this).css("background-color", "white");
+        });
+    });
+</script>
+<!--
+<script>
+    /* Källa: https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_scrollspy_animate&stacked=h */
+            $(document).ready(function(){
+        // Add smooth scrolling on all links inside the navbar
+        $(".smoothScroll a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }  // End if
+        });
+    });
+</script>-->
+</body>
+</html>

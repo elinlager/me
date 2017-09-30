@@ -1,0 +1,173 @@
+#menu {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.tredtext {
+    /* Source for making 3D-text:
+    http://enjoycss.com/code/0/#boxShadow*/
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    float: none;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    position: static;
+    opacity: 1;
+    overflow: visible;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font: normal 60px/normal "Passero One", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 3px 2px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.06) ;
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -webkit-transform: none;
+    transform: none;
+    -webkit-transform-origin: 50% 50% 0;
+    transform-origin: 50% 50% 0;
+
+    letter-spacing: 8px;
+    font-weight: 700;
+    display: inline-block;
+
+    /* Source for learning how to implement css animation:
+    https://codemyui.com/wave-text-animation-css/ */
+    animation: menuPop 0.2s ease-in-out backwards;
+}
+
+.tredtext.first {
+    animation-delay: 0.1s;
+}
+.tredtext.second {
+    animation-delay: 0.2s;
+}
+.tredtext.third {
+    animation-delay: 0.3s;
+}
+.tredtext.fourth {
+    animation-delay: 0.4s;
+}
+.tredtext.fifth {
+     animation-delay: 0.5s;
+}
+.tredtext.sixth {
+      animation-delay: 0.6s;
+  }
+.tredtext.seventh {
+       animation-delay: 0.7s;
+   }
+.tredtext.eigth {
+    animation-delay: 0.8s;
+}
+.tredtext.ninth {
+    animation-delay: 0.9s;
+}
+.tredtext.tenth {
+    animation-delay: 1s;
+}
+
+@keyframes menuPop {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 1px 0 rgb(204,204,204) , 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 3px 2px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.06) ;
+    }
+}
+
+.ActiveMenu > .tredtext, #contactBtn:hover > .tredtext, #projectsBtn:hover > .tredtext, #meBtn:hover > .tredtext {
+    text-shadow: 0 1px 0 rgb(204,204,204), 0 1px 0 rgb(201,201,201), 0 1px 0 rgb(187,187,187), 0 2px 0 rgb(185,185,185), 0 2px 0 rgb(170,170,170), 0 3px 1px rgba(0,0,0,0.0980392), 0 0 0px rgba(0,0,0,0.0980392), 0 1px 3px rgba(0,0,0,0.298039), 0 3px 0px rgba(0,0,0,0.2), 0 5px 11px rgba(0,0,0,0.247059);
+    display: inline-block;
+    cursor: pointer;
+}
+
+#contactBtn, #projectsBtn, #meBtn {
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+
+.simpleText {
+    font-family: "Znikomit", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/********** PROJECT **********/
+
+#projectName{
+    bottom: 12%;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+/*
+För alt 1:
+.projectImage {
+    width: 80%;
+}
+
+#projects {
+    margin-top: 40px;
+}
+
+.projectCol {
+    margin-top: 50px;
+}*/
+
+
+/********** CONTACT **********/
+.imgIcon {
+    width: 80px;
+}
+
+.icon {
+    opacity: 0.7;
+    margin: 20px;
+}
+
+.icon:hover{
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.contact {
+    margin-top: 15%;
+    padding-left: 10%;
+}
+
+.styleLink{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.styleLink:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: black;
+}
+
+/********** FONTS **********/
+
+/*Source: http://www.dafont.com/znikomit.font */
+@font-face {
+    font-family: Znikomit;
+    src: url(fonts/Znikomit.otf);
+}
