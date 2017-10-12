@@ -103,16 +103,55 @@
     font-family: "Znikomit", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 20px;
     font-weight: 600;
+    line-height: 150%;
 }
 
 
+.meContainer {
+    padding-left: 15%;
+    padding-top: 20%;
+}
 /********** PROJECT **********/
+.projImg {
+    max-width: 100%;
+    z-index: -1;
+}
 
-#projectNameBox {
-    bottom: 12%;
+
+.projTextContainer {
+    opacity: 0;
+    padding: 30px;
     position: absolute;
 }
 
+.projContainer:hover .projTextContainer{
+    color:white;
+    opacity: 1;
+    z-index: 2;
+}
+
+.projImgContainer {
+    background-color: black;
+    opacity: 1;
+}
+
+.projContainer:hover .projImgContainer{
+    opacity: 0.2;
+}
+
+
+.projContainer{
+    background-color: black;
+    margin-top: 40px;
+    width: 90%;
+}
+
+.projLink {
+    cursor: pointer;
+
+}
+
+/*
 .projectName{
 
     font-size: 30px;
@@ -120,7 +159,14 @@
     cursor: pointer;
     display: inline-block;
 }
-
+#projectsCarousel {
+    display: table;
+    height: 100vh;
+}
+.carouselContainer {
+    display: table-cell;
+    vertical-align: middle;
+}*/
 
 /*
 För alt 1:
@@ -139,12 +185,12 @@ För alt 1:
 
 /********** CONTACT **********/
 .imgIcon {
-    width: 80px;
+    width: 60px;
 }
 
 .icon {
     opacity: 0.7;
-    margin: 20px;
+    margin: 12px;
 }
 
 .icon:hover{
@@ -154,7 +200,7 @@ För alt 1:
 
 .contact {
     margin-top: 15%;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 .styleLink{
