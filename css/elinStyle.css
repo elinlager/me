@@ -98,12 +98,19 @@
 
 }
 
-
 .simpleText {
     font-family: "Znikomit", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 150%;
+}
+
+/********** ME **********/
+#elinImg {
+    width: 500px;
+    position:absolute;
+    right: 0px;
+    bottom: 0px;
 }
 
 

@@ -18,7 +18,7 @@
 <body>
 
 
-    <div class="container-fluid" style="height: 100vh">
+    <div class="container-fluid" style="height: 100vh; padding-right: 0px;">
             <div class="col-md-4 flex-first" id="menu" >
                 <div id="meBtn" class="notActiveMenu">
                     <p class="tredtext first">E</p>
@@ -53,7 +53,7 @@
                 </div><br>
             </div>
 
-            <div class="col-md-8 me" style="display: none">
+            <div class="col-md-8 me" style="display: none; height: 100vh;">
                 <div class="meContainer" style="width: 580px;">
                     <p class="simpleText">
                         "Hej, jag heter Elin Lager. Jag är född och uppvuxen i den underbara staden Malmö.
@@ -61,6 +61,7 @@
                         Linköpingsuniversitet. För tillfället läser jag mitt fjärde år på National University of Singapore."
                     </p>
                 </div>
+                <img id="elinImg" src="images/elin.png" alt="Me">
             </div>
 
             <div class="col-md-8 projects" style="display: none">
@@ -251,7 +252,7 @@
 
             setTimeout(function(){
                 $(".me").fadeIn();
-            }, 1900);
+            }, 1700);
 
 
             $("#meBtn").click(function() {
